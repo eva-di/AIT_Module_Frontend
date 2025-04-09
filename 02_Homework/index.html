@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+  </head>
+  <body
+    style="background-color: rgb(241, 234, 254); font-family: 'Roboto', sans-serif">
+    <h2 style="color: #422870">Регистрация</h2>
+
+    <form action="/Регистрация">
+      <div>
+        <label for="name">Имя </label>
+        <input id="name" type="text" placeholder="Ваше имя" required />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="surname">Фамилия </label>
+        <input id="surname" type="text" placeholder="Ваша фамилия" required />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="email">Адрес электронной почты </label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Введите эл. адрес"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="password">Пароль </label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Введите пароль"
+          title="Требования к паролю: заглавная буква, маленькая буква, спецсимвол, цифра, 8 символов"
+          pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[@$!%*&?]).{8,}"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="phone">Номер телефона </label>
+        <input
+          id="phone"
+          type="tel"
+          placeholder="Введите номер телефона"
+          title="Пример: +123-456-7890"
+          pattern="\+?[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="country">Страна </label>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          placeholder="Россия"
+        /><br /><br />
+
+        <label for="city">Город</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Москва"
+        /><br /><br />
+
+        <label for="street">Улица</label>
+        <input
+          type="text"
+          id="street"
+          name="street"
+          placeholder="Ленина"
+        /><br /><br />
+
+        <label for="house">Дом</label>
+        <input
+          type="text"
+          id="house"
+          name="house"
+          placeholder="10"
+        /><br /><br />
+
+        <label for="apartment">Квартира (необязательно)</label>
+        <input
+          type="text"
+          id="apartment"
+          name="apartment"
+          placeholder="45"
+        /><br /><br />
+
+        <label for="postal">Индекс</label>
+        <input
+          type="text"
+          id="postal"
+          name="postal"
+          placeholder="123456"
+        /><br /><br />
+      </div>
+
+      <div>
+        <label for="status">Семейное положение</label>
+        <select id="status" required>
+          <option value="">Семейное положение</option>
+          <option value="married">женат/ за мужем</option>
+          <option value="single">не женат/ не за мужем</option>
+          <option value="divorced">в разводе</option>
+          <option value="divorced">вдовец/ вдова</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div>
+        <label>Пол</label>
+        <label><input type="radio" name="gender" value="мужской" /> Male</label>
+        <label
+          ><input type="radio" name="gender" value="женский" /> Female</label
+        >
+      </div>
+
+      <br />
+
+      <div>
+        <label for="agreement">Подтверждаю корректность введенных данных</label>
+        <input id="agreement" type="checkbox" required />
+      </div>
+
+      <br />
+      <button style="background-color: #662484; color: white">Отправить</button>
+    </form>
+  </body>
+</html>
