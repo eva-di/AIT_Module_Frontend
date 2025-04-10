@@ -1,0 +1,129 @@
+<!-- "!" для шаблона html документа -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* h1 {
+        font-size: 40px;
+      }
+
+      .header {
+        color: rgb(33, 13, 107);
+      }
+
+      #name, #email, #password, #phone, #hobby {
+        padding: 5px;
+      } */
+
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+  </head>
+  <!-- 
+    Где будет задаваться стилистика?
+      1) inline-styles (в той же строке, где tag). У любого элемента есть атрибут style
+      2) Отдельный tag <style>
+      3) в отдельном файле
+
+      
+    С помощью чего мы выбираем элемент(-ы) для стилизации? (selectors)
+      1) По имени tag
+      2) По имени класса
+      3) По id
+
+  -->
+  <body>
+    <h1 class="header" style="text-align: center">Signup form</h1>
+
+    
+    <form action="/register">
+      <!-- пишем адрес, куда форма должна быть отправлена-->
+      <div>
+        <label for="name">Name: </label>
+        <!-- label for"id", required - по умолчанию true(если его нет - то false) -->
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name..."
+          required
+        />
+    </div>
+
+      <div>
+        <label for="email">Email: </label>
+        <!-- for = id -->
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email..."
+          required
+        />
+    </div>
+  
+
+      <div>
+        <label for="password">Password: </label>
+        <!-- for = id -->
+        <!-- minlength="8" -->
+        <!-- pattern="(?=.*\d)(?=.*\w)(?=.*\[@$!%*&?]).{8,}" -->
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter your password..."
+          title="Требования к паролю: заглавная буква, маленькая буква, спецсимвол, цифра, 8 символов"
+          pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[@$!%*&?]).{8,}"
+          required
+        />
+    </div>
+
+      <div>
+        <label for="phone">Phone: </label>
+        <input
+          id="phone"
+          type="tel"
+          placeholder="Enter your phone number..."
+          title="Пример: +123-456-7890"
+          pattern="\+?[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="hobby">Hobby: </label>
+        <select id="hobby" required>
+          <option value="">Choose your hobby...</option>
+          <option value="sport">Football</option>
+          <option value="sport">Volleyball</option>
+          <option value="music">Guitar</option>
+          <option value="music">Piano</option>
+        </select>
+
+    </div>
+
+      <div>
+        <label for="agreement">Agreement: </label>
+        <input id="agreement" type="checkbox" required />
+    </div>
+
+      <div>
+        <label for="male">Male: </label>
+        <input name="gender" id="male" type="radio" required />
+
+        <label for="female">Female: </label>
+        <input name="gender" id="female" type="radio" />
+    </div>
+
+      <!-- <div> - блочный элемент по умолчанию-->
+      <!-- <span> - строчный элемент по умолчанию -->
+      <!-- <br> break row - прервать строчку -->
+      <!-- <hr> - horizontal row - горизонтальная линия -->
+      <!-- <hr> -->
+      <div class="btn">
+        <button type="reset">Reset</button>
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </body>
+</html>

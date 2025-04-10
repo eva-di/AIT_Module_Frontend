@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Registrierungsformular</title>
+  </head>
+  <body>
+    <form action="/Registrieren">
+      <h2>Neuen Account erstellen</h2>
+      <p>
+        Jetzt bei Stepstone registrieren und den richtigen Job mit dem richtigen
+        Gehalt finden.
+      </p>
+      <div>
+        <label for="email" class="label">E-Mail-Adresse</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="E-Mail-Adresse"
+          title="Gib deine E-Mail-Adresse wie folgt ein: deinname@domain.de"
+          required
+        /> </div>
+      
+        <label for="password" class="label">Passwort festlegen</label>
+        <div class="password-wrapper">
+          <input
+            id="password"
+            type="password"
+            placeholder="Passwort festlegen"
+            title="Achte darauf, dass dein Passwort mindestens 8 Zeichen enthält."
+            pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[@$!%*&?]).{8,}"
+            required
+          />
+          <img
+            src="./free-icon-hide-2767146.png"
+            alt="Passwort anzeigen"
+          />
+        </div>
+      <div class="btn">
+        <button class="registrieren-button">Registrieren</button> <br />
+        <button class="mit-button">
+          <img
+            src="./google-color.svg"
+            alt="Google"
+            style="width: 20px; vertical-align: middle; margin-right: 8px"
+          />
+          Mit Google anmelden
+        </button>
+        <br />
+
+        <button class="mit-button">
+          <img
+            src="./Facebook_f_logo_(2019).svg"
+            alt="Facebook"
+            style="width: 20px; vertical-align: middle; margin-right: 8px"
+          />
+          Mit Facebook anmelden
+        </button>
+      </div>
+
+      <p>
+        Mit deiner Registrierung stimmst du unseren <a href="https://www.stepstone.de/e-recruiting/rechtliches/nutzungsbedingungen-bewerber/">Nutzungsbedingungen</a> zu. Lies
+        dazu auch unsere <a href="https://www.stepstone.de/ueber-stepstone/datenschutzerklarung-fur-bewerber/">Datenschutzerklärung</a>. In Erfüllung des
+        Nutzungsvertrages schicken wir dir passende Jobs und Infos zu ähnlichen
+        Produkten und Services per E-Mail zu. Zudem machen wir dein Profil und
+        deinen Lebenslauf für Arbeitgeber sichtbar – so wirst du gefunden, statt
+        zu suchen. Natürlich kannst du jederzeit von unseren
+        einwilligungsfähigen E-Mails und Services abmelden oder dein Profil auf
+        “nicht sichtbar” stellen.
+      </p>
+      <p class="einloggen">Du hast schon einen Account?<a href="https://www.stepstone.de">Jetzt einloggen</a></p>
+    </form>
+  </body>
+</html>
