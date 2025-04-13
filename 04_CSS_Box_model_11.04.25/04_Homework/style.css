@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #c5bbbc;
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400; /* 100 - 900*/
+    font-style: normal;
+}
+
+header {
+    background-image: url(./images/Image20250411113049.jpg);
+    height: 400px;
+    background-position: center; /*Сопоставление центра элемента с центром фонового изображения*/
+    background-size: cover; /*выравнивание элемента и фоновой картинки по одной из осей (х или у) */
+    /* background-repeat: no-repeat; - */
+    position: relative;
+    width: 100%;
+}
+
+h1 {
+    color: #4a413a;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #1e1103;
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.9);
+    white-space: nowrap; /* не переносить текст */
+}
+
+
+h2 {
+    color: #4a413a;
+    text-align: center;
+
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+    
+}
+
+p {
+    text-align: justify; 
+    line-height: 1.6;
+    font-family: 'Work Sans', sans-serif;
+    text-indent: 30px;
+}
+
+.highlighted {
+    font-family: "Covered By Your Grace";
+    color:  #4a413a;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+a {
+    display: block; 
+    color: #d46905;
+    text-decoration: none; /* подчеркивание ссылки */
+    transition: transform 0.3s ease;
+    text-decoration: none; 
+    font-size: 20px;
+
+}
+
+a:hover {
+    transform: scale(1.02); /* 1. увеличиваем элемент на 2% при наведении курсора ра элемент */
+    text-decoration: underline;
+}
