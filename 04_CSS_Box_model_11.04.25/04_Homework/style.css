@@ -69,15 +69,15 @@ p {
 
 a {
     display: block; 
-    color: #d46905;
+    color: #d1814f;
     text-decoration: none; /* подчеркивание ссылки */
     transition: transform 0.3s ease;
     text-decoration: none; 
     font-size: 20px;
-
 }
 
 a:hover {
     transform: scale(1.02); /* 1. увеличиваем элемент на 2% при наведении курсора ра элемент */
     text-decoration: underline;
+    color: #995c67;
 }
