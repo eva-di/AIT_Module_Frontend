@@ -1,0 +1,69 @@
+body {
+    height: 3000px;
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+
+}
+/* fixed - выпадает из нормального потока, дру8гие элементы не замечают и схлопываются. При скролле остается на метсе относительно Viewport */
+.navigation {
+    background-color:lightgray;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    width: 100%;
+
+}
+.card {
+    height: 300px;
+    width: 200px;
+    border-radius: 18px;
+    pad: 10px;
+    margin: 20px;
+    /* by default position is static */
+    /* position: static; */
+}
+
+.red {
+    background-color: lightcoral;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+/* position: relative; */
+/* top, bottom, left, right */
+.relative-block {
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: rgb(72, 217, 227);
+    height: 60px;
+    width: 60px;
+    /* z индексы работают только для позиционированных элементов, то есть position не равно static */
+    z-index: 1;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* sticky - залипает при скроле в определенной позиции относительно родителя */
+
+.sticky-card {
+    position: sticky;
+    top: 100px;
+
+}

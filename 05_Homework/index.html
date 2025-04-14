@@ -1,0 +1,63 @@
+<!-- Задание
+Сверстать страницу, в которой будет находиться 3 карточки и header 
+(cоздайте новые index.html и styles.css файлы)
+
+Требования:
+
+В карточках должна находится информация о клиентах:
+имя фамилия
+фото
+возраст
+пол
+На странице должен быть header c позицией fixed, при прокрутке страницы ни один из элементов 
+не должен перекрывать header
+Карточки с данными клиентов должны быть относительно позиционированы 
+и расположены одна над одной лестницей, при этом информация на карточках не должна закрываться -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Наши клиенты</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">Наши клиенты</nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card card-1">
+          <div>
+            <p><strong>Имя:</strong> Екатерина У.</p>
+            <p><strong>Возраст:</strong> 36 лет</p>
+            <p><strong>Пол:</strong> ж</p>
+          </div>
+          <div><img src="./pictures/ekat.jpg" alt="ekaternia" /></div>
+        </div>
+        <div class="card card-2">
+          <div>
+            <p><strong>Имя:</strong> Светлана К.</p>
+            <p><strong>Возраст:</strong> 28 лет</p>
+            <p><strong>Пол:</strong> ж</p>
+          </div>
+          <img src="./pictures/akt.jpg" alt="svetlana" />
+        </div>
+        <div class="card card-3">
+          <div>
+            <p><strong>Имя:</strong> Виктор П.</p>
+            <p><strong>Возраст:</strong> 47 лет</p>
+            <p><strong>Пол:</strong> м</p>
+          </div>
+          <img src="./pictures/viktor.jpg" alt="viktor" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
