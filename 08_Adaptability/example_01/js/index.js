@@ -59,6 +59,96 @@ const user = {
 };
 console.log(user);
 
+// Преобразование типов
+// falsy values - те, которые преобразуются в false
+
+//  явное и неявное приведение
+
+
+// Явное приведение
+// 10 -> "10"
+let ten = 10;
+let teAsString = String(ten);
+console.log(teAsString);
+console.log(typeof ten);
+console.log(typeof teAsString);
+console.log(typeof teAsString === 'string');
+
+
+// Неявное приведение
+let elevenAsString = 11 + ''; // '11' (автоматическая конкатенация)
+
+// Приведение к числу
+// '11' -> 11
+let eleven = Number(elevenAsString);
+console.log(eleven);
+console.log(typeof eleven);
+
+let wrongNumber = Number("fghjkl");
+console.log(wrongNumber); // NaN - Это особое значение not a number
+console.log("typeof NaN: " + typeof NaN); // Какой тип данных у NaN? -> number
+
+
+if (x < Infinity) {
+    console.log("blabla");
+}
+
+console.log("typeof Infinity: " + typeof Infinity); // Какой тип данных у Infinity? number
+
+// Самое интересное это приведение к boolean
+// явное
+console.log(Boolean("Alisher")); // true
+console.log(Boolean("12")); // true
+
+// falsy values
+console.log(Boolean("")); // false
+console.log(Boolean(0)); // false
+// console.log(Boolean(-0)); // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean(NaN)); // false
+console.log(Boolean(null)); // false
+
+// неявное в boolean
+
+const myMoneyPoints = 12;
+const myBrotherMoneyPoints = 0;
+
+if (myMoneyPoints) {
+    console.log("I\'m rich!"); // выполнится (преобразовалось в true)
+}
+
+if (myBrotherMoneyPoints) {
+    console.log("I\'m rich!"); // недостижимый код
+}
+
+let myUser = null;
+if(myUser) {
+    console.log("User exists");
+}
+
+myUser = {email: "fgbh@mail.com"};
+
+if(myUser) {
+    console.log(myUser.email);
+
+};
+
+// Шаблонные строки
+
+const myAge = 36;
+const myName = 'Eva';
+
+// const text = "Меня зовут" + myName + "Мне" + myAge + "лет."
+
+const text = `Меня зовут ${myName}. Мне ${myAge} лет`; // backticks - обратные кавычки
+console.log(text);
+
+
+
+
+
+
+
 
 
 
