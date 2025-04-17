@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@font-face {
+  font-family: "RecoletaAltBold";
+  src: url("../fonts/Recoleta\ Alt\ Bold.otf") format("opentype"); 
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "RecoletaRegular";
+  src: url("../fonts/Recoleta\ Alt\ Bold.otf") format("opentype"); 
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "RecoletaRegular";
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+}
+
+main {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.main-block {
+  display: flex;
+  /* margin: 10px; */
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%; 
+  gap: 32px;
+}
+
+.base-element {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.element-image {
+  width: 300px;
+  height: 300px;
+}
+
+.image-one {
+  background-image: url("../img/Product01_2x_302c91ad-2f71-49cc-b352-94d5211189a2_1200x.webp");
+  background-size: cover;
+}
+
+.image-two {
+  background-image: url("../img/Product02_2x_efd32340-fb2e-4673-a8dc-3996752ef37e_1200x.webp");
+  background-size: cover;
+}
+.image-three {
+  background-image: url("../img/Product03_2x_a6147c4e-0603-4e3f-9d97-d1c4452088ae_1200x.webp");
+  background-size: cover;
+}
+.image-four {
+  background-image: url("../img/Product04_2x_00fde3e2-e0bb-46f0-a904-45730d9e2127_1200x.webp");
+  background-size: cover;
+}
+
+.image-five {
+  background-image: url("../img/Product05_2x_33a23251-fd7b-4fa2-97f5-2a79e50e6d29_1200x.webp");
+  background-size: cover;
+}
+
+.image-six {
+  background-image: url("../img/Product06_2x_98f17f2e-4d13-4ef0-9d39-06192d4332ea_1200x.webp");
+  background-size: cover;
+}
+.image-seven {
+  background-image: url("../img/Product07-2_2x_6b51fd34-abf3-4c69-906c-64f3d8d0faf9_1200x.webp");
+  background-size: cover;
+}
+.image-eight {
+  background-image: url("../img/Product08-2_2x_0f2dd55c-0211-4df4-9d69-d3562d3ce4a7_1200x.webp");
+  background-size: cover;
+}
+
+.element-information {
+  font-family: Neue Haas Unica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  width: 280px;
+  height: 300px;
+  background-color: #f4f3eb;
+  justify-content: space-around;
+}
+
+.element-information-cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.element-information-cost .price-main {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.element-information-cost .price-per-tree {
+  font-size: 16px;
+  margin: 0;
+}
+
+.element-information button {
+  background-color: #4f772d;
+  border: thin solid #4f772d;
+  padding: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  line-height: 1.2;
+  font-size: 14px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 20px;
+  margin: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.element-information button:hover {
+  background-color: #b2a85e;
+  color: black;
+  border: none;
+}
+
+.footer {
+  background-color: #1b342d;
+  color: #fff;
+  font-family: Neue Haas Unica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+  max-width: 1220px;
+  width: calc(90% + 20px);
+  margin: 0 auto;
+}
+
+.footer_credits {
+  text-align: center;
+  padding-bottom: 24px;
+  color: #cfd1ad;
+  font-weight: 400;
+}
+
+
+.footer__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+.footer-block {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style: none;
+  line-height: 1.2;
+}
+
+.footer-content-1 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+}
+.footer-content-1 img {
+  width: 200px;
+}
+
+.footer-title {
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.footer-class-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.my-link-class:hover {
+  color: #bfb467;
+}
