@@ -197,6 +197,9 @@ a:hover {
   border: none;
   background-color: white;
 }
+.cart-icon {
+  width: 30px;
+}
 
 .stickyBar-comboContainer {
   display: flex;

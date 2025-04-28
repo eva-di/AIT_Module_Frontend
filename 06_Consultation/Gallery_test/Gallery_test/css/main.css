@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 48px;
+    font-size: 2rem; /* базовый размер на больших экранах */
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.354);
+    /* box-shadow: [сдвиг по X] [сдвиг по Y] [размытие] [растяжение] [цвет]; */
+  }
+  .photo {
+    width: calc(50% - 40px);
+    height: calc((35vw - 40px) / 16 * 9);
+    margin: 20px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: 0.9s ease;
+    background-color: orange;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.354);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .photo {
+    width: 70%;
+    height: 150px;
+    margin: 20px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: 0.9s ease;
+    background-color: orange;
+  }
+}
+
+.photo:hover {
+  transform: scale(1.7);
+  cursor: pointer;
+  border: 25px solid #efefef;
+}
+
+.photo1 {
+  background-image: url("../img/img1.jpeg");
+}
+.photo2 {
+  background-image: url("../img/img2.jpeg");
+}
+.photo3 {
+  background-image: url("../img/img3.jpeg");
+}
+.photo4 {
+  background-image: url("../img/img4.jpeg");
+}
+.photo5 {
+  background-image: url("../img/img5.jpeg");
+}
+.photo6 {
+  background-image: url("../img/img6.jpeg");
+}
+.photo7 {
+  background-image: url("../img/img7.jpeg");
+}
+.photo8 {
+  background-image: url("../img/img8.jpeg");
+}
+.photo9 {
+  background-image: url("../img/img9.jpeg");
+}
+.photo10 {
+  background-image: url("../img/img10.jpeg");
+}
+.photo11 {
+  background-image: url("../img/img11.jpg");
+}
+.photo12 {
+  background-image: url("../img/img12.jpeg");
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow My Tree - Header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            height: 200vh; /* Для демонстрации sticky эффекта */
+        }
+        
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            margin-right: 5px;
+        }
+        
+        .powered-by {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+        
+        .checkmark {
+            color: #4CAF50;
+            margin-left: 5px;
+        }
+        
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .language-currency {
+            display: flex;
+            gap: 10px;
+            font-size: 14px;
+        }
+        
+        .login-btn {
+            background: none;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .login-btn:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo">GROW MY TREE</div>
+                <div class="powered-by">powered by impact hero</div>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#">Baum-Pakete</a>
+                <a href="#">Baume schenken <span class="checkmark">✓</span></a>
+                <a href="#">Für Unternehmen</a>
+                <a href="#">Transparenz</a>
+                <a href="#">Blog</a>
+            </nav>
+            
+            <div class="right-section">
+                <div class="language-currency">
+                    <span>DE <span class="checkmark">✓</span></span>
+                    <span>EUR € <span class="checkmark">✓</span></span>
+                </div>
+                <button class="login-btn">Einloggen</button>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
