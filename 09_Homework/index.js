@@ -12,7 +12,7 @@ Homework
 Выведите результат в консоль.
 */
 
-let temp = 15;
+const temp = 15;
 
 if (temp < 0) {
   console.log("Холодно!");
@@ -23,6 +23,19 @@ if (temp < 0) {
 } else {
   console.log("Жарко!");
 }
+
+const temp2 = 31;
+
+if (temp2 < 0) {
+  console.log("Холодно!");
+} else if (temp2 <= 20) {
+  console.log("Прохладно");
+} else if (temp2 <= 30) {
+  console.log("Тепло");
+} else {
+  console.log("Жарко!");
+}
+
 
 /*
 Задание 2
@@ -41,35 +54,28 @@ DS - пыльная буря (видимость менее 10 км)
 SS - песчаная буря (видимость менее 10 км)
 */
 
-function temperature(code) {
-  switch (code) {
+function decode(weatherCode) {
+  switch (weatherCode) {
     case "SQ":
-      return "шквал";
-      break;
+      return "шквал"; 
+      // break; // return выбрасывает из функции, break не нужен (break после return недостижимый код)
     case "PO":
       return "пыльный вихрь";
-      break;
     case "FC":
       return "торнадо";
-      break;
     case "BR":
       return "дымка (видимость от 1 до 9 км)";
-      break;
     case "HZ":
       return "мгла (видимость менее 10 км)";
-      break;
     case "FU":
       return "дым (видимость менее 10 км)";
-      break;
     case "DS":
       return "пыльная буря (видимость менее 10 км)";
-      break;
     case "SS":
       return "песчаная буря (видимость менее 10 км)";
-      break;
-    default:
+    default: // без default - выдаст undefined (функция не наг=шла return) (лучше  уточнить, нужно ли дефолтное сообщение или оставить, как есть)
       return "Неизвестный код погоды";
   }
 }
-console.log(temperature("DS"));
-console.log(temperature("ABS"));
+console.log(decode("DS"));
+console.log(decode("ABS"));
