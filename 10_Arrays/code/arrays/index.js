@@ -1,4 +1,5 @@
 // Array
+// - упорядоченная структура данных, индексируемый, может увеличиваться
 // JAVA - нумерованный, одного типа значения, фиксированная длина
 
 const students = [];
@@ -48,7 +49,7 @@ const rose = plants.pop();
 console.log(plants); //  [ 'Camomile', 'Dandelion', 'Basil', 'Oak' ]
 console.log(rose);
 
-// [9, "asad", true] // tuple
+// [9, "asad", true] // кортеж - tuple (разные типы данных)
 
 console.log("==========1===========");
 function createPersonalInfo(age, name, hairColour) {
