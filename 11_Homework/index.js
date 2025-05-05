@@ -12,8 +12,7 @@ const house = {
   wallColor: "green",
 };
 
-const { wallColor } = house;
-const { adress } = house;
+const { wallColor,adress } = house; // destructuring assignment 
 console.log(wallColor, adress);
 
 /*
@@ -45,6 +44,29 @@ console.log(prefixConcat(stringArray, "pine"));
 console.log(stringArray);
 
 
+const arr = ["apple", "orange"]; // метод, мутирующий массив (который меняет массив)
+function mutate (arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = "pickle";
+  }
+}
+mutate(arr);
+console.log(arr);
+
+
+function addPrefix(arr, prefix) {
+  const prefixArr = [];
+
+  for (let i = 0; i < arr.length; i++)  {
+    prefixArr[i] = prefix + arr[i];
+  }
+  return prefixArr;
+}
+const saltedPickles = addPrefix(arr, "salted");
+console.log(arr); //[ 'pickle', 'pickle' ]
+console.log(saltedPickles); // [ 'saltedpickle', 'saltedpickle' ]
+
+
 /*
 Задание 3
 Создайте функцию gardener, которая принимает в себя два параметра: операцию и предмет, 
@@ -62,8 +84,10 @@ function gardener (operation, item) {
     operation(item);
 }
 
-const water = function (item) {
-    console.log("I water this " + item);
+
+// hoisting - поднятие вверх  (learn javascript - учебник)
+const water = function (plant) {
+    console.log("I water this " + plant);
 }
 
 const cut = function(item) {
@@ -74,8 +98,27 @@ const kill = function(actionWith) {
 console.log("I killed Ms MArple with " + actionWith);
 }
 
+gardener((plant)=>{console.log("I dig out this " + plant);}, "nettle"); // callback (функция переданная как параметр в другую функцию) стрелочная функция - одноразовое использование
+
 gardener(water, "rose");
 gardener(cut, "shears");
 gardener(kill, "shears");
+
+
+
+
+
+
+
+// side effect - побочный эффект
+let x = 10; 
+function getHEllo () {
+  x +=2; // внутри функции можно менять окружение (не рекомендуется)
+  return "Hello";
+}
+console.log(getHEllo());
+console.log(getHEllo());
+
+console.log(x);
 
 
