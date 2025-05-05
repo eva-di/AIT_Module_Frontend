@@ -36,7 +36,7 @@ const square = {
     return this.sideLength * 4;
   },
   enlargeSide() {
-    this.sideLength *= 2;
+    return this.sideLength *= 2;
   },
 };
 

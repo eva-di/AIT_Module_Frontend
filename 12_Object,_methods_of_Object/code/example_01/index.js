@@ -204,7 +204,7 @@ function unify2(obj, additionalKey, additionalValue) {
     return { ... obj, [additionalKey]: additionalValue};
 
   }
-
+ 
   const book = { title: "The Lord Of The Rings" };
   
   const newBook = unify2(book, "author", "Tolkien JR");
