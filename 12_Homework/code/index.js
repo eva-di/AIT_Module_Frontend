@@ -9,17 +9,26 @@
 */
 
 function swapKeyValue(obj) {
-    const key = Object.keys(obj)[0];
-    const value = Object.values(obj)[0];
-    const newObj = {};
-    newObj[value] = key;
-    return newObj;
-    
+  const keys = Object.keys(obj); // можем получить массив всех ключей [0] - выбираем первое
+  const values = Object.values(obj); // можем получить массив всех значений
+  const newObj = {};
+  for (let i = 0; i < keys.length; i++) {
+    newObj[values[i]] = keys[i];
+  }
+  return newObj;
 }
 
-console.log(swapKeyValue({name:"Bob"}));
+console.log(swapKeyValue({ name: "Bob", job: "plumber" }));
 
 
+
+const user = { name: "Vlad", job: "plumber", vocation: "plumber"}
+user["Vlad"] = "name";
+user["plumber"] = "job";
+user["plumber"] = "vocation"; // user["plumber"] = "job"; - сотрется, перепишется в user["plumber"] = "vocation";
+
+
+console.log("\n======================================\n");
 /*
 Задание 2
 Создайте объект дуб oak с полем высота height и полем год year и методом расти grow. 
@@ -30,22 +39,20 @@ console.log(swapKeyValue({name:"Bob"}));
 */
 
 const oak = {
-    height: 140,
-    year: 2025,
-    grow() {
-        this.height += 30;
-        this.year += 1;
-        return `Высота: ${this.height}, Год: ${this.year}`;
-
-    },
+  height: 140,
+  year: 2025,
+  grow() {
+    this.height += 30;
+    this.year ++;
+    return `Высота: ${this.height}, Год: ${this.year}`;
+  },
 };
 
-for (let i = 0; i < 20; i++) {
-    console.log(oak.grow());
-    
-};
+for (let i = 1; i <= 20; i++) {
+  console.log(oak.grow());
+}
 
-console.log(`Дуб через 20 лет: Высота = ${oak.height} см, Год = ${oak.year}`); 
+console.log(`Дуб через 20 лет: Высота = ${oak.height} см, Год = ${oak.year}`);
 
 /*
 Задание 3 дополнительное!
@@ -53,11 +60,10 @@ console.log(`Дуб через 20 лет: Высота = ${oak.height} см, Г�
 */
 const { grow } = oak;
 const maple = {
-    height: 100,
-    year: 2000,
+  height: 100,
+  year: 2000,
 };
+
 
 const mapleGrow = grow.bind(maple);
 console.log(mapleGrow());
-
-
