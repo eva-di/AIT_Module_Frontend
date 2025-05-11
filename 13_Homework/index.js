@@ -52,7 +52,7 @@ console.log(totalPriceNotDieselCars);
 
 // мутирующий
 cars.forEach((car) => {
-  car.price = car.price * 1.2;
+  car.price *= 1.2;
 });
 
 console.log(cars);
