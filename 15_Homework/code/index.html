@@ -1,0 +1,37 @@
+<!-- Задание 1
+Создайте страницу, на которой можно добавить животное в список животных. 
+Соответсвенно, вам понадобится использовать форму, в которой вы уточните 
+у пользователя кличку животного "nickname", возраст "age" и породу "breed".
+
+П.С. Выводите каждый шаг в консоль, чтобы сразу увидеть ошибку.
+
+Имеет смысл сначала сделать с одним полем, а потом добавить и остальные. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animals</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <form id="animal-form">
+      <span id="nickname-error" class="error"></span>
+      <label for="nickname">Nickname</label>
+      <input type="text" placeholder="Nickname" name="nickname" id="nickname" />
+
+      <span id="age-error" class="error"></span>
+      <label for="age">Age</label>
+      <input type="text" placeholder="Age" name="age" id="age" />
+
+      <span id="breed-error" class="error"></span>
+      <label for="breed">Breed</label>
+      <input type="text" placeholder="breed" name="breed" id="breed" />
+
+      <button type="submit" id="submit-btn">Add a new animal</button>
+    </form>
+    <div id="animals-container"></div>
+  </body>
+</html>

@@ -9,17 +9,14 @@ clonedBtn.style.backgroundColor = "#a78b71";
 clonedBtn.style.color = "white";
 clonedBtn.classList.add("second-btn");
 
+
 btn.addEventListener("click", () => {
   document.body.appendChild(clonedBtn);
-
-  btn.style.backgroundColor = "#9c4a1a";
-  btn.style.color = "black";
 });
 
 // EventListener для второй кнопки
 clonedBtn.addEventListener("click", () => {
   btn.style.backgroundColor = "green";
-  btn.textContent = "Жаль!";
-  btn.style.color = "white";
-  btn.style.width = "174px";
+  btn.style.backgroundColor = "#9c4a1a";
+  btn.style.color = "black";
 });

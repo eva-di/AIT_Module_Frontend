@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  font-size: 24px;
+
+
+}
+
+#submit-btn {
+    background-color: rgb(173, 201, 253);
+    height: 40px;
+     font-size: 24px;
+   
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
