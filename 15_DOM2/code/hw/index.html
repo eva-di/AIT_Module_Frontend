@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW15</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="add-animal-form" class="add-animal-form">
+      <label for="nickname-input">Nickname</label>
+      <input type="text" name="nickname" id="nickname-input" />
+
+      <label for="age-input">Age</label>
+      <input type="text" name="age" id="age-input" />
+      <!-- можно указать type="number", но не всегда удобно -->
+
+      <label>Breed</label>
+      <input type="text" name="breed" />
+      <!-- input можно вложить в label -->
+
+      <button type="submit" class="add-btn">Add</button>
+    </form>
+
+    <ul id="animals-list" class="animals-container"></ul>
+
+    <button id="clear-btn" class="clear-btn" type="button">Clear</button>
+  </body>
+</html>
