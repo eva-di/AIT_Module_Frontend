@@ -1,7 +1,12 @@
 function validate(string) {
-  const regex = /^[a-z]19\d\dborn$/;
+  const regex = /^[a-z]19\d{2}born$/; // {2} - количество повторений. d = [0-9]
   return regex.test(string);
+//   if(string.match(regex)) {
+//       return true;
+//     }
+//     return false;
 }
+
 
 console.log(validate("c1986born"));// true
 console.log(validate("b1988born"));// true
