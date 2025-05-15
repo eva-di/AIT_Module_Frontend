@@ -1,0 +1,24 @@
+[
+  {
+    "name": "John",
+    "age": 18,
+    "isStudent": true,
+    "address": {
+      "PLZ": 101,
+      "street": "Berlinerstr.",
+      "house": 12
+    },
+    "kids": ["Ivan", "Fred"]
+  },
+
+  {
+    "name": "Bob",
+    "age": 18,
+     "isStudent": false,
+    "address": {
+      "PLZ": 102,
+      "street": "Dresdnerstr.",
+      "house": 30
+    }
+  }
+]

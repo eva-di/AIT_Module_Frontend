@@ -22,16 +22,13 @@ console.log(result); // "1333 132:123-00"
 // Затем обработайте результат с помощью .then() и .catch().
 
 
-function getRandomNumber(max) {
-  return Math.floor(Math.random() * max);
-}
-
 const promise = new Promise(function(res, rej) {
-   if(getRandomNumber(2)) {
+  const random = Math.floor(Math.random() * 2);
+   if(random) {
       res("Best day of my life");
-   } else {
+   } 
     rej(new Error("Something is off"));
-   }
+   
   });
 
  promise
