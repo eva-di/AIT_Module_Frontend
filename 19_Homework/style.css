@@ -1,0 +1,23 @@
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+
+
+.product-container div {
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(199, 217, 223);
+}
