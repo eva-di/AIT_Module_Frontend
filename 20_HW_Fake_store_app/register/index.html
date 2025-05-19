@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/register.css" />
+    <script src="../js/register.js" defer></script>
+    <title>Registration</title>
+  </head>
+  <body>
+    <h1>Registration</h1>
+    <form id="registration-form">
+
+      <input class="input" type="text" placeholder="name" name="name" required>
+      <input
+        class="input"
+        type="text"
+        placeholder="Email"
+        name="email"
+        required
+      />
+
+      <input
+        class="input"
+        type="password"
+        placeholder="Password"
+        name="password"
+        required
+      />
+
+      <input
+        class="input"
+        type="text"
+        name="image"
+        placeholder="Image URL"
+      />
+
+      <label for="upload-image" class="custom-upload-button"
+        >Choose a photo</label
+      >
+      <input
+        class="upload"
+        type="file"
+        name="photo"
+        accept="image/*"
+
+      />
+      <button class="submit-btn" type="submit">Register</button>
+    </form>
+  </body>
+</html>
